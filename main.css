@@ -1,0 +1,146 @@
+/*--Global----------------------------------------------*/
+* {
+	margin:0;
+	border:0;
+	padding:0;
+	font-size: 100%;
+	outline: 0;
+	vertical-align: baseline;
+}
+
+:root {
+	--pink-main: #C33764;
+	--pink-light: #CF5F83;
+	--pink-lighter: #E29FB5;
+	--pink-dark: #C33764;
+	--blue-main: #1D2671;
+	--blue-light: #4A518D;
+	--blue-lighter: #777DAA; 
+	--blue-dark: #161C55;
+}
+html {
+	font-family: Roboto Slab, serif;
+}
+body {
+	background-image: url(images/background_image2.png), linear-gradient(270deg, #4a518d, #161c55);
+	background-repeat: no-repeat;;
+	background-size: 100%;
+	background-position: bottom right;
+/*	background-color: var(--blue-light); */
+	height: 100vh;
+	width: 100%;
+}
+h1 {
+	font-size: 64px;
+	color: white;
+}
+a {
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	font-weight: 300; 
+}
+p {
+	font-size: 18px;
+	color: white;
+	font-weight: 300; 
+}
+.btnSmall {
+	background-color: var(--pink-main);
+	border-radius: 5px;
+	display: inline-block;
+	width: 150px;
+	padding: 0.8em;
+	text-align: center;
+	-webkit-box-shadow: 0px 12px 21px -4px rgba(0,0,0,0.13);
+	-moz-box-shadow: 0px 12px 21px -4px rgba(0,0,0,0.13);
+	box-shadow: 0px 12px 21px -4px rgba(0,0,0,0.13);
+}
+.btnSmall p, .btnSmall img {
+	display: inline-block;
+	padding-right: 10px;
+}
+.btnLarge {
+	background-color: var(--pink-main);
+	border-radius: 5px;
+	display: inline-block;
+	width: 150px;
+	padding: 0.8em 1.7em;
+	margin-top: 10px;
+	text-align: center;
+	-webkit-box-shadow: 0px 12px 21px -4px rgba(0,0,0,0.13);
+	-moz-box-shadow: 0px 12px 21px -4px rgba(0,0,0,0.13);
+	box-shadow: 0px 12px 21px -4px rgba(0,0,0,0.13);
+}
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+	max-width: 2000px;
+}
+
+/*--Nav------------------------------------------------*/
+.mobile {
+	display: none;
+}
+.close {
+	display: none;
+}
+nav {
+	text-align: right;
+	padding-top: 40px;
+}
+nav a:not(first-child) {
+	margin-left: 50px;
+}
+.logo {
+	float: left;
+}
+#overlay {
+	height: 100vh;
+	width: 100%;
+	text-align: center;
+	z-index: 2;
+	position: absolute;
+	background-color: var(--blue-main);
+}
+#overlay a:not(:first-child) {
+	width: 100%;
+	display: block;
+	margin: 150px 0 0 0;
+}
+#overlay a:first-child {
+	float: right;
+	margin: 65px 5% 0 0;
+}
+#overlay a:hover {
+	opacity: 0.5;
+}
+
+/*--Landing------------------------------------------------*/
+
+.landing {
+	margin-top: 7em;
+	width: 550px;
+}
+.review {
+	opacity: 0.7;
+	margin-top: 1em;
+}
+
+/*--Landing------------------------------------------------*/
+@media (max-width: 900px) {
+	.desktop {
+		display: none;
+	}
+	.mobile {
+		display: block;
+		margin-top: 23px;
+	}
+	.landing {
+		width: 100%;
+		margin-top: 7em;
+	}
+	body {
+		background-size: 150%;
+	}
+}
